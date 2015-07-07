@@ -1,0 +1,73 @@
+@media screen and (min-width: 480px){
+
+	/******************************
+	TWO COLUMN LAYOUT
+	******************************/
+	#primary {
+		width: 60%;
+		float: left;
+	}
+	#secondary {
+		width: 40%;
+		float: right; /*floated to the right just in case we get some weird broswer issues, but even if we floated it to the left, it would appear on the right if we had the primary and secondary IDs in order in the HTML document. */
+	}
+
+	/******************************
+	PAGE: PORTFOLIO
+	******************************/
+	#gallery li {
+		width: 28.3333%;
+	}
+
+	/*Says that we want the styling below to be applied to every 4th list item inside of the gallery element.*/
+	#gallery li:nth-child(4n){
+		clear: left;
+	}
+
+	/******************************
+	PAGE: ABOUT
+	******************************/
+
+	.profile-photo{
+		float: left;
+		margin: 0 5% 80px 0; /*5% on side to separate; 80 px on bottom to separate from text.*/
+	}
+
+}
+
+@media screen and (min-width: 660px){
+	/******************************
+	HEADER
+	******************************/
+
+	nav{
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+	}
+
+	#logo{
+		float: left;
+		text-align: left;
+		margin-left: 5%;
+		width: 45%;
+	}
+
+	h1{
+		font-size: 2.5em;
+	}
+
+	h2{
+		/*font-size: 0.825em;*/
+		font-size: 1em;
+		margin-bottom: 20px; 
+	}
+
+	header{
+		border-bottom: 5px solid #ff465a;
+		margin-bottom: 60px;
+	}
+}
